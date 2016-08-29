@@ -1,7 +1,9 @@
 # Generative Model
 This paper list is a bit different from others. I'll put some opinion and summary on it. However, to understand the whole paper, you still have to read it by yourself!    
 Surely, any pull request or discussion are welcomed!
-
+- ***Semantic Image Inpainting with Perceptual and Contextual Losses*** [[arXiv 2016]](https://arxiv.org/abs/1607.07539)
+  - Raymond Yeh, Chen Chen, Teck Yian Lim, Mark Hasegawa-Johnson, Minh N. Do
+  - Semantic inpainting can be viewed as contrained image generation
 - ***Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks*** [[ICLR 2016]](https://arxiv.org/abs/1511.06434)
   - Alec Radford, Luke Metz, Soumith Chintala
   - Explore the extension of models for deeper generative model
