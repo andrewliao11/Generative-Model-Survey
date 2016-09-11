@@ -1,6 +1,9 @@
 # Generative Model
 This paper list is a bit different from others. I'll put some opinion and summary on it. However, to understand the whole paper, you still have to read it by yourself!    
 Surely, any pull request or discussion are welcomed!
+- ***Improved Techniques for Training GANs*** [[NIPS 2016]](https://arxiv.org/abs/1606.03498)
+  - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
+  - [Code](https://github.com/openai/improved-gan) for the paper
 - ***Semantic Image Inpainting with Perceptual and Contextual Losses*** [[arXiv 2016]](https://arxiv.org/abs/1607.07539)
   - Raymond Yeh, Chen Chen, Teck Yian Lim, Mark Hasegawa-Johnson, Minh N. Do
   - Semantic inpainting can be viewed as contrained image generation
