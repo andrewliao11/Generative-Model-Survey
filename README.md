@@ -4,6 +4,8 @@ Surely, any pull request or discussion are welcomed!
 - ***Improved Techniques for Training GANs*** [[NIPS 2016]](https://arxiv.org/abs/1606.03498)
   - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
   - [Code](https://github.com/openai/improved-gan) for the paper
+  - Feature matching: instead of maximizing the output of discriminator, it's trained to match the feature on an imtermediate layer of discriminator
+  - 
 - ***Semantic Image Inpainting with Perceptual and Contextual Losses*** [[arXiv 2016]](https://arxiv.org/abs/1607.07539)
   - Raymond Yeh, Chen Chen, Teck Yian Lim, Mark Hasegawa-Johnson, Minh N. Do
   - Semantic inpainting can be viewed as contrained image generation
@@ -21,6 +23,7 @@ Surely, any pull request or discussion are welcomed!
 - ***Generative Adversarial Networks*** [[NIPS 2014]](https://arxiv.org/abs/1406.2661)
   - Scenario: The generative model can be thought of as analogous to a team of counterfeiters, trying to produce fake currency and use it without detection, while the discriminative model is analogous to the police, trying to detect the counterfeit currency.
   - In other words, D and G play the following two-player minimax game with value function
+  - Find Nash equilibrium by gradient descent of D and G
   - Nice post from Eric Jang, [Generative Adversarial Nets in TensorFlow](http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html)
   - Another post about GAN: [Generating Faces with Torch](http://torch.ch/blog/2015/11/13/gan.html)
   - Official source code: [Theano version](https://github.com/goodfeli/adversarial)
