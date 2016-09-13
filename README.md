@@ -1,11 +1,18 @@
 # Generative Model
 This paper list is a bit different from others. I'll put some opinion and summary on it. However, to understand the whole paper, you still have to read it by yourself!    
 Surely, any pull request or discussion are welcomed!
+
+## Paper
 - ***Improved Techniques for Training GANs*** [[NIPS 2016]](https://arxiv.org/abs/1606.03498)
   - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
   - [Code](https://github.com/openai/improved-gan) for the paper
   - Feature matching: instead of maximizing the output of discriminator, it's trained to match the feature on an imtermediate layer of discriminator
-  - 
+  - Minibatch-discrimination: 
+    - Motivation: because the discriminator processes each example **independently**, there is no coordination between its gradients, and thus no mechanism to tell the outputs of the generator to become more dissimilar to each other
+    - Allow the discriminator to look at **multiple data examples in combination-**, and perform what we call minibatch discrimination
+    - Calculate the l1-error btn each samples feature and finally concatenate the output with the sample feature
+    - **Hope the generated images to be diverse** :point_right: less probability to collapse
+  - Historical averaging to stablize the training process
 - ***Semantic Image Inpainting with Perceptual and Contextual Losses*** [[arXiv 2016]](https://arxiv.org/abs/1607.07539)
   - Raymond Yeh, Chen Chen, Teck Yian Lim, Mark Hasegawa-Johnson, Minh N. Do
   - Semantic inpainting can be viewed as contrained image generation
@@ -33,6 +40,10 @@ Surely, any pull request or discussion are welcomed!
   - D model outputs a scalar, while G model outputs an image
   - Use **Multi-scale architecture** to solve the limitation of convolution (kernel size is limited, eg. 3*3)
   - Still immature. Used in UCF101 dataset, due to the fixed background
+
+## Suggest papers
+- ***Adversarial examples in the physical world*** [[arXiv 2016]](https://arxiv.org/abs/1607.02533)
+  - Alexey Kurakin, Ian Goodfellow, Samy Bengio  
 
 ## Recommended Post  
 - [What are some recent and potentially upcoming breakthroughs in deep learning?](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy), written by Yann LeCun
