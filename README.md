@@ -13,6 +13,7 @@ Surely, any pull request or discussion are welcomed!
     - Calculate the l1-error btn each samples feature and finally concatenate the output with the sample feature
     - **Hope the generated images to be diverse** :point_right: less probability to collapse
   - Historical averaging to stablize the training process
+  - **Automatic evaluation metrix**, which is based on the inception model (See section 4)
 - ***Semantic Image Inpainting with Perceptual and Contextual Losses*** [[arXiv 2016]](https://arxiv.org/abs/1607.07539)
   - Raymond Yeh, Chen Chen, Teck Yian Lim, Mark Hasegawa-Johnson, Minh N. Do
   - Semantic inpainting can be viewed as contrained image generation
