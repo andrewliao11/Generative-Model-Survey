@@ -3,6 +3,9 @@ This paper list is a bit different from others. I'll put some opinion and summar
 Surely, any pull request or discussion are welcomed!
 
 ## Paper
+- ***WaveNet: A Generative Model for Raw Audio*** [[arXiv 2016]](http://128.84.21.199/abs/1609.03499)
+  - Aaron van den oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray Kavukcuoglu
+  - Use generative model to automatically generate the audio
 - ***Improved Techniques for Training GANs*** [[NIPS 2016]](https://arxiv.org/abs/1606.03498)
   - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
   - [Code](https://github.com/openai/improved-gan) for the paper
