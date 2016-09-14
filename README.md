@@ -5,7 +5,15 @@ Surely, any pull request or discussion are welcomed!
 ## Paper
 - ***WaveNet: A Generative Model for Raw Audio*** [[arXiv 2016]](http://128.84.21.199/abs/1609.03499)
   - Aaron van den oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray Kavukcuoglu
+  - Not a GAN architecture
+  - [DeepMind Post](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
   - Use generative model to automatically generate the audio
+  - Dilated causal convolution
+    - causal: only depends on the previous sample data
+    - dilated: use dilated convolution to increase the receptive field
+  - Conditional wavenet
+    - Global condition: use a V matrix as projection matrix (See eq.2)
+    - Local condition: this time the additional input can be a sequence. Use a transpose convolutional network to project(upsample) it to the same length as input audio signal.
 - ***Improved Techniques for Training GANs*** [[NIPS 2016]](https://arxiv.org/abs/1606.03498)
   - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen
   - [Code](https://github.com/openai/improved-gan) for the paper
