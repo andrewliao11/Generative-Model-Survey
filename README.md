@@ -59,6 +59,8 @@ Surely, any pull request or discussion are welcomed!
 - ***Generative Visual Manipulation on the Natural Image Manifold*** [[ECCV 2016]](https://people.eecs.berkeley.edu/~junyanz/projects/gvm/eccv16_gvm.pdf)
   - Jun-Yan Zhu, Philipp Krähenbühl, Eli Shechtman, Alexei A. Efros
   - [Demo video](https://www.youtube.com/watch?v=9c4z6YsBGQ0)
+- ***Attend, Infer, Repeat: Fast Scene Understanding with Generative Models*** [[NIPS 2016]](http://arxiv.org/abs/1603.08575)
+  - S. M. Ali Eslami, Nicolas Heess, Theophane Weber, Yuval Tassa, David Szepesvari, Koray Kavukcuoglu, Geoffrey E. Hinton
 
 ## Recommended Post  
 - [What are some recent and potentially upcoming breakthroughs in deep learning?](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy), written by Yann LeCun
