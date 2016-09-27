@@ -5,8 +5,15 @@ Surely, any pull request or discussion are welcomed!
 ## Paper
 - ***Neural Photo Editing with Introspective Adversarial Networks*** [[arXiv 2016]](http://arxiv.org/abs/1609.07093)
   - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
-  - Hybridization of the Generative Adversarial Network and the  Variational Autoencoder designed for use in the editor
-  - Instead of changing individual pixels, the interface backpropagates the difference between the local image patch and the requested color, and takes a gradient descent step in the latent space to minimize that difference. (not iteratively backprop, one backprop at a time)
+  - Produce specific semantic changes in the output image by use of a **contextual paintbrush** :art: that indirectly modifies the latent vector
+  - Hybridization of the Generative Adversarial Network and the  Variational Autoencoder designed for use in the editor, aka IAN
+  - Combine the encoder part of auto-encoder with the discriminator :point_right: discriminator learns a hierarchy of features that are useful for multiple tasks, including inferring latents(encoder in auto-encoder) and comparing samples(D in GAN) 
+  - Introspective Adversarial Networks: 
+    - generator: generate image that fool the desciminator
+    - auto-encoder: to reconstruct the image (image -> feature -> image)
+    - dixcriminator: indtead of binary labels, the model is assigned to discriminate the orginal image, reconstructed image, generated image. 
+  - IANs maintain the **balance of power** between the generator and the discriminator. In particular, we found that if we made the discriminator too expressive it would quickly out-learn the generator and achieve near-perfect accuracy, resulting in a significant slow-down in training. We thus maintain an “improvement ratio” rule of thumb, where every layer we add to the discriminator was
+accompanied by an addition of three layers in the generator.
 - ***WaveNet: A Generative Model for Raw Audio*** [[arXiv 2016]](http://128.84.21.199/abs/1609.03499)
   - Aaron van den oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray Kavukcuoglu
   - Not a GAN architecture
