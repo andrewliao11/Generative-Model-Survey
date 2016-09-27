@@ -3,6 +3,10 @@ This paper list is a bit different from others. I'll put some opinion and summar
 Surely, any pull request or discussion are welcomed!
 
 ## Paper
+- ***Neural Photo Editing with Introspective Adversarial Networks*** [[arXiv 2016]](http://arxiv.org/abs/1609.07093)
+  - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
+  - Hybridization of the Generative Adversarial Network and the  Variational Autoencoder designed for use in the editor
+  - Instead of changing individual pixels, the interface backpropagates the difference between the local image patch and the requested color, and takes a gradient descent step in the latent space to minimize that difference. (not iteratively backprop, one backprop at a time)
 - ***WaveNet: A Generative Model for Raw Audio*** [[arXiv 2016]](http://128.84.21.199/abs/1609.03499)
   - Aaron van den oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray Kavukcuoglu
   - Not a GAN architecture
