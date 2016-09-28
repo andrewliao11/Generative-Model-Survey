@@ -7,6 +7,7 @@ Surely, any pull request or discussion are welcomed!
   - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
   - Produce specific semantic changes in the output image by use of a **contextual paintbrush** :art: that indirectly modifies the latent vector
   - Hybridization of the Generative Adversarial Network and the  Variational Autoencoder designed for use in the editor, aka IAN
+    - Why combine these two? Training VAE is more stable (I guess)  
   - Combine the encoder part of auto-encoder with the discriminator :point_right: discriminator learns a hierarchy of features that are useful for multiple tasks, including inferring latents(encoder in auto-encoder) and comparing samples(D in GAN) 
   - Introspective Adversarial Networks: 
     - generator: generate image that fool the desciminator
