@@ -77,3 +77,4 @@ accompanied by an addition of three layers in the generator.
 - [What are some recent and potentially upcoming breakthroughs in deep learning?](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy), written by Yann LeCun
 - [Image Completion with Deep Learning in TensorFlow](http://bamos.github.io/2016/08/09/deep-completion/), from Brandon Amos
 - [The application of generative model](https://openai.com/blog/generative-models/#going-forward), from OpenAI
+- [Autoencoders](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/), it's important to know the difference between auto-encoder and generatice model
