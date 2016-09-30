@@ -2,6 +2,12 @@
 This paper list is a bit different from others. I'll put some opinion and summary on it. However, to understand the whole paper, you still have to read it by yourself!    
 Surely, any pull request or discussion are welcomed!
 
+## What's the advantage of GAN?
+In the past, the generative model may use MSE as the criterion, which makes it blurring and unlike the natural image. However, since the appearance of GAN architecture, generating blurring image is easy to be discriminated by the discriminator, which encourages the generator to produce more natural image.
+
+## You may hear auto-encoder, what's the difference between them?
+An autoencoder neural network is an unsupervised learning algorithm that applies backpropagation, setting the target values to be equal to the inputs. For generative model, we often aim to **interpret** the freature space, so you can see that we will start the generative model with a random noise.
+
 ## Paper
 - ***Neural Photo Editing with Introspective Adversarial Networks*** [[arXiv 2016]](http://arxiv.org/abs/1609.07093)
   - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
@@ -78,4 +84,4 @@ accompanied by an addition of three layers in the generator.
 - [What are some recent and potentially upcoming breakthroughs in deep learning?](https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning/answer/Yann-LeCun?srid=nZuy), written by Yann LeCun
 - [Image Completion with Deep Learning in TensorFlow](http://bamos.github.io/2016/08/09/deep-completion/), from Brandon Amos
 - [The application of generative model](https://openai.com/blog/generative-models/#going-forward), from OpenAI
-- [Autoencoders](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/), it's important to know the difference between auto-encoder and generatice model
+- [Autoencoders](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/), it's important to know the difference between auto-encoder and generative model
