@@ -9,6 +9,12 @@ In the past, the generative model may use MSE as the criterion, which makes it b
 An autoencoder neural network is an unsupervised learning algorithm that applies backpropagation, setting the target values to be equal to the inputs. For generative model, we often aim to **interpret** the freature space, so you can see that we will start the generative model with a random noise.
 
 ## Paper
+- ***SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient*** [[arXiv]](https://arxiv.org/abs/1609.05473)
+  - Lantao Yu, Weinan Zhang, Jun Wang, Yong Yu
+  - Tackle two main problem:
+    - If the generated data is based on discrete tokens, the “slight change” guidance from the discriminative net makes little sense because there is probably no corresponding token for such slight change in the limited dictionary space
+    - GAN can only give the score/loss for an **entire** sequence when it has been generated
+  - [Source code](https://github.com/LantaoYu/SeqGAN)
 - ***Neural Photo Editing with Introspective Adversarial Networks*** [[arXiv 2016]](http://arxiv.org/abs/1609.07093)
   - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
   - Produce specific semantic changes in the output image by use of a **contextual paintbrush** :art: that indirectly modifies the latent vector
