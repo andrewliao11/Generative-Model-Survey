@@ -18,7 +18,6 @@ An autoencoder neural network is an unsupervised learning algorithm that applies
   - The correspondence is calculated by combining the same coordinate of the two images (I1,I3) 
   - Deep neural network for Frame Interpolation: Use highway to maintain the information of location and the same time, easily to make the network deeper
   - Future work:  we believe that the present unsupervised learning approach holds brilliant potential for the more natural solutions to similar low-level vision problems, such as optical flow, tracking and motion segmentation.  
-
 - ***SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient*** [[arXiv]](https://arxiv.org/abs/1609.05473)
   - Lantao Yu, Weinan Zhang, Jun Wang, Yong Yu
   - Tackle two main problem:
