@@ -9,14 +9,16 @@ In the past, the generative model may use MSE as the criterion, which makes it b
 An autoencoder neural network is an unsupervised learning algorithm that applies backpropagation, setting the target values to be equal to the inputs. For generative model, we often aim to **interpret** the freature space, so you can see that we will start the generative model with a random noise.
 
 ## Paper
+
 - ***Learning Image Matching by Simply Watching Video*** [[ECCV 2016]](https://arxiv.org/abs/1603.06041)
-  - Gucan Long, Laurent Kneip, Jose M. Alvarez, Hongdong Li
-  - What's image matching? Given two images, we have to identify the object in one image toward the same object in another image
+  - Gucan Long, Laurent Kneip, Jose M. Alvarez, Hongdong Li   
+  - What's image matching? Given two images, we have to identify the object in one image toward the same object in another image
   - Start from the insight that the problem of frame-interpolation implicitly solves for inter-frame correspondences
   - Note that this back-tracking does not mean reconstructing input images from the output one. Instead, we only need to find the pixels in each input image which have the maximum influence to each pixel of the output image. :point_right: backpropogation
-  - The correspondence is calculated by combining the same coordinate of the two images (I1,I3)
-  - Deep neural network for Frame Interpolation: Use highway to maintain the information of location and the same time, easily to make the network deeper.
-  - Future work:  we believe that the present unsupervised learning approach holds brilliant potential for the more natural so- lutions to similar low-level vision problems, such as optical flow, tracking and motion segmentation.
+  - The correspondence is calculated by combining the same coordinate of the two images (I1,I3) 
+  - Deep neural network for Frame Interpolation: Use highway to maintain the information of location and the same time, easily to make the network deeper
+  - Future work:  we believe that the present unsupervised learning approach holds brilliant potential for the more natural solutions to similar low-level vision problems, such as optical flow, tracking and motion segmentation.  
+
 - ***SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient*** [[arXiv]](https://arxiv.org/abs/1609.05473)
   - Lantao Yu, Weinan Zhang, Jun Wang, Yong Yu
   - Tackle two main problem:
