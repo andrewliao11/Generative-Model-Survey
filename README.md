@@ -52,7 +52,7 @@ accompanied by an addition of three layers in the generator.
   - [Code](https://github.com/openai/improved-gan) for the paper
   - Feature matching: instead of maximizing the output of discriminator, it's trained to match the feature on an imtermediate layer of discriminator
   - Minibatch-discrimination: 
-    - Motivation: because the discriminator processes each example **independently**, there is no coordination between its gradients, and thus no mechanism to tell the outputs of the generator to become more dissimilar to each other
+    - Motivation: because the discriminator processes each example **independently**, there is no coordination between its gradients, and thus no mechanism to tell the outputs of the generator to become more dissimilar to each other. (Prevent the generator collapse to single point)
     - Allow the discriminator to look at **multiple data examples in combination-**, and perform what we call minibatch discrimination
     - Calculate the l1-error btn each samples feature and finally concatenate the output with the sample feature
     - **Hope the generated images to be diverse** :point_right: less probability to collapse
