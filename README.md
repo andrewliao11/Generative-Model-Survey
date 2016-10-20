@@ -10,6 +10,11 @@ An autoencoder neural network is an unsupervised learning algorithm that applies
 
 ## Paper
 
+- ***InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets*** [[NIPS 2016]](https://arxiv.org/abs/1606.03657) [ongoing]
+	- Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, Pieter Abbeel
+	- See the paragraph 2 in Sec.4 for their motivation (with example)
+	- Decompose the input vector into separate vector with salient structured semantic features ***c***
+	- However, the generator tends to ignore ***c***, the latent code, so the authors add an restriction (mutual information) on the loss
 - ***Learning Image Matching by Simply Watching Video*** [[ECCV 2016]](https://arxiv.org/abs/1603.06041)
   - Gucan Long, Laurent Kneip, Jose M. Alvarez, Hongdong Li   
   - What's image matching? Given two images, we have to identify the object in one image toward the same object in another image
