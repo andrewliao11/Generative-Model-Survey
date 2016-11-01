@@ -28,6 +28,7 @@ An autoencoder neural network is an unsupervised learning algorithm that applies
   - Tackle two main problem:
     - If the generated data is based on discrete tokens, the “slight change” guidance from the discriminative net makes little sense because there is probably no corresponding token for such slight change in the limited dictionary space
     - GAN can only give the score/loss for an **entire** sequence when it has been generated
+  - Use a rollout policy to complete the whole sentence and use the descriminator to give the reward
   - [Source code](https://github.com/LantaoYu/SeqGAN)
 - ***Neural Photo Editing with Introspective Adversarial Networks*** [[arXiv 2016]](http://arxiv.org/abs/1609.07093)
   - Andrew Brock, Theodore Lim, J.M. Ritchie, Nick Weston
